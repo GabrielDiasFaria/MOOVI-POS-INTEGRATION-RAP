@@ -1,6 +1,6 @@
 @AbapCatalog.viewEnhancementCategory: [#NONE]
 @AccessControl.authorizationCheck: #NOT_REQUIRED
-@EndUserText.label: 'Composite: Filmes'
+@EndUserText.label: 'Composite - Filmes'
 @Metadata.ignorePropagatedAnnotations: true
 define root view entity ZR_GDFFILMES
   as select from ZI_GDFFILMES
@@ -12,5 +12,5 @@ define root view entity ZR_GDFFILMES
       Duracao,
       Classificacao,
 
-      concat(cast(Duracao as abap.char(10)), ' min') as DuracaoTexto
+      concat(cast(Duracao as abap.char(10)), ' min.') as DuracaoTexto
 }
