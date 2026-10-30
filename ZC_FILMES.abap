@@ -38,7 +38,6 @@ define root view entity ZC_GDFFILMES
       @UI.identification: [{ position: 40 }]
       AnoLancamento,
       @EndUserText.label: 'Duração'
-      //@UI.lineItem: [{ position: 50 }]
       @UI.identification: [{ position: 50 }]
       Duracao,
       @EndUserText.label: 'Classificação'
@@ -48,6 +47,5 @@ define root view entity ZC_GDFFILMES
       Classificacao,
       @EndUserText.label: 'Duração'
       @UI.lineItem: [{ position: 70 }]
-      //@UI.identification: [{ position: 70 }]
       DuracaoTexto
 }
