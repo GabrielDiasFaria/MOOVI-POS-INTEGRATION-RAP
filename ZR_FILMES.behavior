@@ -1,0 +1,25 @@
+managed
+implementation in class zbp_r_gdffilmes unique;
+
+define behavior for ZR_GDFFILMES alias Filme
+persistent table zgdft_filmes
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly, numbering : managed ) id;
+
+  mapping for zgdft_filmes
+    {
+      AnoLancamento = ano_lancamento;
+      Id            = id;
+      Classificacao = classificacao;
+      Duracao       = duracao;
+      Titulo        = titulo;
+    }
+
+}
