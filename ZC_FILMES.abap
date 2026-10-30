@@ -24,6 +24,7 @@ define root view entity ZC_GDFFILMES
       @EndUserText.label: 'ID'
       @UI.identification: [{ position: 10 }]
   key Id,
+      @Search.defaultSearchElement: true
       @EndUserText.label: 'Título'
       @UI.lineItem: [{ position: 20 }]
       @UI.identification: [{ position: 20 }]
@@ -37,16 +38,16 @@ define root view entity ZC_GDFFILMES
       @UI.identification: [{ position: 40 }]
       AnoLancamento,
       @EndUserText.label: 'Duração'
-      @UI.lineItem: [{ position: 50 }]
+      //@UI.lineItem: [{ position: 50 }]
       @UI.identification: [{ position: 50 }]
-      @UI.hidden: true
       Duracao,
       @EndUserText.label: 'Classificação'
       @UI.lineItem: [{ position: 60 }]
       @UI.identification: [{ position: 60 }]
+      @UI.selectionField: [{ position: 60 }]
       Classificacao,
       @EndUserText.label: 'Duração'
       @UI.lineItem: [{ position: 70 }]
-      @UI.identification: [{ position: 70 }]
+      //@UI.identification: [{ position: 70 }]
       DuracaoTexto
 }
